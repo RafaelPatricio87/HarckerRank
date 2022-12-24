@@ -1,10 +1,13 @@
-function SherlockRaizQuadrados(a,b){
-    let count = 0
- for(let index = 0 ;index < b; index++){
-    if((index * index) >= a && (index*index) <= b){
-        count++
+function squares(a, b) {
+    // Write your code here
+   let square = 0, i = 1, count = 0;
+    while (square <= b) {
+        square = i * i;
+        if (square >= a && square <= b) {
+            count += 1;
+        }
+        i += 1;
     }
- }
- return count
+    return count;
 }
-console.log(SherlockRaizQuadrados( 8,20))
+console.log(squares(3,9))
