@@ -3,6 +3,7 @@ function migratoryBirds(ar){
     // esse codigo conta qnt numeros repito tem em um array.
     // e joga num objeto
     ar.forEach((el) => {
+      console.log(el)
       count[el] = (count[el] || 0) + 1
     });
     // retorna o maior valor
